@@ -1,0 +1,199 @@
+@import "@fontsource/kanit";
+@import "@fontsource/raleway";
+
+
+.dashboard {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 2rem;
+  padding: 2rem;
+  background: url("/images/b1.jpg") no-repeat center center;
+  background-size: cover;
+  min-height: 100vh;
+  margin-top: 50px;
+}
+
+.leftSection {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.userCard {
+  background-color: #1919d2;
+  color: white;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  min-height: 150px;
+}
+.dashboard .leftSection .userCard .dashboardHead{
+    font-family: "Kanit", serif;
+    font-size: 2rem;
+    font-weight: 500;
+}
+.dashboard .leftSection .userCard .dashboardTitle{
+  font-family: "Raleway", serif;
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+/* .cardTitle {
+  font-weight: bold;
+} */
+
+.cardContent {
+  margin-top: 0.5rem;
+}
+
+.summary {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.summaryItem {
+  flex: 1 1 calc(33% - 1rem);
+  padding: 1.5rem;
+  text-align: center;
+  border-radius: 8px;
+  color: white;
+  font-weight: bold;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  min-height: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.summary .summaryHead{
+  font-family: "Kanit", serif;
+  font-size: 1.28rem;
+  font-weight: 600;
+}
+.summary .summaryTitle{
+  font-family: "Raleway", serif;
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+.income {
+  background-color: #1ddd24;
+}
+
+.expense {
+  background-color: #f52f21;
+}
+
+.balance {
+  background-color: #f29808;
+}
+
+.rightSection {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.rightSection .rightHead{
+  font-family: "Kanit", serif;
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: white;
+}
+.recentTransactions {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
+  gap: 1rem;
+}
+.rightSection .recentTransactions .rightTitle{
+  font-family: "Raleway", serif;
+  font-size: 1rem;
+  font-weight: 500;
+}
+.transaction {
+  padding: 1rem;
+  border-radius: 10px;
+  position: relative;
+  background: linear-gradient(90deg, rgba(255,244,249,1) 0%, rgba(24,33,24,1) 0%, rgba(68,115,64,1) 49%, rgba(26,33,26,1) 99%);  background-size: cover;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.843);
+  z-index: 1;
+  color: white;
+}
+
+.transaction::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.272);
+  border-radius: 10px;
+  z-index: -1;
+}
+.transactionAmount {
+  font-weight: bold;
+}
+
+.noTransaction {
+  color: gray;
+  text-align: center;
+}
+
+.addTransactionButton {
+  background-color: #1976d2;
+  color: white;
+  font-family: "Kanit", serif;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.addTransactionButton:hover {
+  background-color: #115293;
+}
+
+
+
+@media (max-width: 768px) {
+  .dashboard {
+    grid-template-columns: 1fr;
+    padding: 1rem;
+  }
+
+  .leftSection {
+    order: 1;
+  }
+
+  .rightSection {
+    order: 2;
+  }
+
+  .summaryItem {
+    flex: 1 1 40%; 
+    min-height: 100px;
+  }
+
+  .recentTransactions {
+    grid-template-columns: 1fr; 
+  }
+}
+
+@media (max-width: 480px) {
+  .userCard {
+    padding: 1rem;
+    min-height: 120px;
+  }
+
+  .summaryItem {
+    min-height: 90px;
+    padding: 1rem;
+  }
+
+  .transaction {
+    padding: 0.75rem;
+  }
+
+  .addTransactionButton {
+    font-size: 0.9rem;
+    padding: 0.5rem 1rem;
+  }
+}

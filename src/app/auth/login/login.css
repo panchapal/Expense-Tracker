@@ -1,0 +1,83 @@
+@import "@fontsource/kanit";
+@import "@fontsource/raleway";
+
+.loginPage {
+  background: url("/images/b1.jpg") no-repeat center center;
+  background-size: cover;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.loginPage .loginContainer {
+  position: relative;
+  background: url("/images/a1.jpg") no-repeat center center;
+  background-size: cover;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.669);
+  max-width: 400px;
+  width: 100%;
+  z-index: 1;
+  color: white;
+}
+
+.loginPage .loginContainer::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.767);
+  border-radius: 10px;
+  z-index: -1;
+}
+
+
+.loginPage .loginContainer .loginFormContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
+}
+
+.loginPage .loginContainer .loginFormContainer .formBox {
+  width: 80%;
+  max-width: 400px;
+}
+
+.loginPage .loginContainer .loginFormContainer .loginHeading {
+  text-align: center;
+  color: #f9f9f9;
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 20px;
+  font-family: "Kanit", serif;
+}
+
+.login-message {
+  text-align: center;
+  margin-top: 20px;
+  color: #ff6f61;
+}
+.loginPage .loginButton {
+  background-color: rgb(89, 64, 250);
+  font-family: "Kanit", serif;
+}
+.loginPage .loginButton:hover {
+  border: 1px solid rgb(89, 64, 250);
+  background-color: transparent;
+}
+.registerLink {
+  color: #3f51b5;
+  text-decoration: none;
+  font-weight: bold;
+  font-family: "Raleway", serif;
+}
+.registerLink:hover {
+  text-decoration: underline;
+}
+

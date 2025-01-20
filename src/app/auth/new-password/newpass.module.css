@@ -1,0 +1,70 @@
+@import "@fontsource/kanit";
+@import "@fontsource/raleway";
+
+.registerPage {
+  background: url("/images/b1.jpg") no-repeat center center;
+  background-size: cover;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.registerPage .registerContainer {
+  position: relative;
+  background: url("/images/re1.jpg") no-repeat center center;
+  background-size: cover;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.843);
+  width: 100%;
+  max-width: 360px;
+  z-index: 1;
+  color: white;
+}
+
+.registerPage .registerContainer::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.767);
+  border-radius: 10px;
+  z-index: -1;
+}
+
+
+.registerForm {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
+}
+
+.registerFormBox {
+  width: 80%;
+  max-width: 400px;
+  
+}
+
+.registerFormBox h4 {
+  text-align: center;
+  color: #ffffff;
+  font-size: 2rem;
+  font-weight: 500;
+  margin-bottom: 16px;
+  font-family: "Kanit", serif;
+}
+.registerPage .registerButton {
+  background-color: rgb(89, 64, 250);
+  font-family: "Kanit", serif;
+}
+.registerPage .registerButton:hover {
+  border: 1px solid rgb(89, 64, 250);
+  background-color: transparent;
+}
+
+
