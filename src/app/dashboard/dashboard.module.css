@@ -19,7 +19,7 @@
   gap: 1.5rem;
 }
 
-.userCard {
+.dashboard .leftSection .userCard {
   background-color: #1919d2;
   color: white;
   padding: 1.5rem;
