@@ -75,15 +75,15 @@
   font-size: 1.3rem;
   font-weight: 600;
 }
-.income {
+.summary .income {
   background-color: #1ddd24;
 }
 
-.expense {
+.summary .expense {
   background-color: #f52f21;
 }
 
-.balance {
+.summary .balance {
   background-color: #f29808;
 }
 
@@ -108,7 +108,7 @@
   font-size: 1rem;
   font-weight: 500;
 }
-.transaction {
+.rightSection .recentTransactions .transaction {
   padding: 1rem;
   border-radius: 10px;
   position: relative;
@@ -119,7 +119,7 @@
   color: white;
 }
 
-.transaction::before {
+.rightSection .recentTransactions .transaction::before {
   content: "";
   position: absolute;
   top: 0;
