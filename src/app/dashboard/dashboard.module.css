@@ -112,13 +112,14 @@
   padding: 1rem;
   border-radius: 10px;
   position: relative;
-  background: linear-gradient(90deg, rgba(255,244,249,1) 0%, rgba(24,33,24,1) 0%, rgba(68,115,64,1) 49%, rgba(26,33,26,1) 99%);  background-size: cover;
+  background-image: linear-gradient( 104.1deg,  rgba(0,61,100,1) 13.6%, rgba(47,127,164,1) 49.4%, rgba(30,198,198,1) 93.3% );
+  background-size: cover;
   overflow: hidden;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.843);
   z-index: 1;
   color: white;
+  transition: all 0.3s ease;
 }
-
 .rightSection .recentTransactions .transaction::before {
   content: "";
   position: absolute;
@@ -130,26 +131,33 @@
   border-radius: 10px;
   z-index: -1;
 }
-.transactionAmount {
-  font-weight: bold;
+.rightSection .recentTransactions .transaction:hover {
+  transform: scale(1.03);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
 }
 
 .noTransaction {
-  color: gray;
+  color: white;
   text-align: center;
+  font-family: "Raleway", serif;
 }
 
 .addTransactionButton {
-  background-color: #1976d2;
-  color: white;
-  font-family: "Kanit", serif;
-  font-size: 1rem;
-  font-weight: 600;
-}
+  background-image: linear-gradient(to right, #1A2980 0%, #26D0CE  51%, #1A2980  100%);
+   padding: 13px 40px;
+   text-align: center;
+   text-transform: uppercase;
+   transition: 0.5s;
+   background-size: 200% auto;
+   color: white;            
+   border-radius: 10px;
+ }
 
-.addTransactionButton:hover {
-  background-color: #115293;
-}
+ .addTransactionButton:hover {
+   background-position: right center;
+   color: #fff;
+   text-decoration: none;
+ }
 
 
 

@@ -62,15 +62,15 @@ export default function Dashboard() {
         <Box className={styles.summary}>
           <Paper className={`${styles.summaryItem} ${styles.income}`}>
             <Typography variant="h6" className={styles.summaryHead}>Total Income</Typography>
-            <Typography variant="h5" className={styles.summaryTitle}>${summary.income.toFixed(2)}</Typography>
+            <Typography variant="h5" className={styles.summaryTitle}>{summary.income.toFixed(2)}</Typography>
           </Paper>
           <Paper className={`${styles.summaryItem} ${styles.expense}`}>
             <Typography variant="h6" className={styles.summaryHead}>Total Expenses</Typography>
-            <Typography variant="h5" className={styles.summaryTitle}>${summary.expense.toFixed(2)}</Typography>
+            <Typography variant="h5" className={styles.summaryTitle}>{summary.expense.toFixed(2)}</Typography>
           </Paper>
           <Paper className={`${styles.summaryItem} ${styles.balance}`}>
             <Typography variant="h6" className={styles.summaryHead}>Balance</Typography>
-            <Typography variant="h5" className={styles.summaryTitle}>${summary.balance.toFixed(2)}</Typography>
+            <Typography variant="h5" className={styles.summaryTitle}>{summary.balance.toFixed(2)}</Typography>
           </Paper>
         </Box>
       </Box>
@@ -87,7 +87,7 @@ export default function Dashboard() {
               <Typography variant="body2" className={styles.rightTitle}>Category: {transaction.category}</Typography>
               <Typography variant="body2" className={styles.rightTitle}>Type: {transaction.type}</Typography>
                 <Typography variant="body2" className={styles.rightTitle}>
-                  Amount: ${transaction.amount}
+                  Amount: {transaction.amount}
                 </Typography>
                 <Typography variant="body2" className={styles.rightTitle}>Notes: {transaction.notes}</Typography>
               </Paper>

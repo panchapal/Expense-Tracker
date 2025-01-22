@@ -1,168 +1,189 @@
-.page {
-  --gray-rgb: 0, 0, 0;
-  --gray-alpha-200: rgba(var(--gray-rgb), 0.08);
-  --gray-alpha-100: rgba(var(--gray-rgb), 0.05);
+@import "@fontsource/kanit";
+@import "@fontsource/raleway";
 
-  --button-primary-hover: #383838;
-  --button-secondary-hover: #f2f2f2;
-
-  display: grid;
-  grid-template-rows: 20px 1fr 20px;
-  align-items: center;
-  justify-items: center;
-  min-height: 100svh;
-  padding: 80px;
-  gap: 64px;
-  font-family: var(--font-geist-sans);
-}
-
-@media (prefers-color-scheme: dark) {
-  .page {
-    --gray-rgb: 255, 255, 255;
-    --gray-alpha-200: rgba(var(--gray-rgb), 0.145);
-    --gray-alpha-100: rgba(var(--gray-rgb), 0.06);
-
-    --button-primary-hover: #ccc;
-    --button-secondary-hover: #1a1a1a;
-  }
-}
-
-.main {
+.heroSectionContent {
+  background: url("/images/b.jpg") no-repeat center center;
+  background-size: cover;
+  padding: 40px 20px;
   display: flex;
-  flex-direction: column;
-  gap: 32px;
-  grid-row-start: 2;
-}
-
-.main ol {
-  font-family: var(--font-geist-mono);
-  padding-left: 0;
-  margin: 0;
-  font-size: 14px;
-  line-height: 24px;
-  letter-spacing: -0.01em;
-  list-style-position: inside;
-}
-
-.main li:not(:last-of-type) {
-  margin-bottom: 8px;
-}
-
-.main code {
-  font-family: inherit;
-  background: var(--gray-alpha-100);
-  padding: 2px 4px;
-  border-radius: 4px;
-  font-weight: 600;
-}
-
-.ctas {
-  display: flex;
-  gap: 16px;
-}
-
-.ctas a {
-  appearance: none;
-  border-radius: 128px;
-  height: 48px;
-  padding: 0 20px;
-  border: none;
-  border: 1px solid transparent;
-  transition:
-    background 0.2s,
-    color 0.2s,
-    border-color 0.2s;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
   justify-content: center;
-  font-size: 16px;
-  line-height: 20px;
-  font-weight: 500;
-}
-
-a.primary {
-  background: var(--foreground);
-  color: var(--background);
-  gap: 8px;
-}
-
-a.secondary {
-  border-color: var(--gray-alpha-200);
-  min-width: 180px;
-}
-
-.footer {
-  grid-row-start: 3;
-  display: flex;
-  gap: 24px;
-}
-
-.footer a {
-  display: flex;
   align-items: center;
-  gap: 8px;
+  min-height: 100vh;
 }
 
-.footer img {
-  flex-shrink: 0;
+.heroSectionContent .gridContainer {
+  max-width: 1100px;
+  margin: 0 auto;
 }
 
-/* Enable hover only on non-touch devices */
-@media (hover: hover) and (pointer: fine) {
-  a.primary:hover {
-    background: var(--button-primary-hover);
-    border-color: transparent;
-  }
-
-  a.secondary:hover {
-    background: var(--button-secondary-hover);
-    border-color: transparent;
-  }
-
-  .footer a:hover {
-    text-decoration: underline;
-    text-underline-offset: 4px;
-  }
+.gridContainer .heroSectionText {
+  text-align: left;
+  padding: 20px;
+  text-transform: capitalize;
 }
 
-@media (max-width: 600px) {
-  .page {
-    padding: 32px;
-    padding-bottom: 80px;
-  }
+.gridContainer .heroHeadingContent {
+  font-size: 3.6rem;
+  font-weight: bold;
+  color: #c1d2e2;
+  margin-bottom: 20px;
+  font-family: "Kanit", serif;
+}
 
-  .main {
-    align-items: center;
-  }
+.gridContainer .heroDescriptionContent {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #d5dce4;
+  margin-bottom: 20px;
+  font-family: "Raleway", sans-serif;
+}
 
-  .main ol {
-    text-align: center;
-  }
+.gridContainer .heroButtonContent {
+  display: flex;
+  gap: 20px;
+}
 
-  .ctas {
+.gridContainer .heroButtonContent .heroButton2 {
+  border-color: #007bff;
+  color: #007bff;
+  padding: 10px 20px;
+  text-transform: none;
+  font-size: 1rem;
+  font-family: "Kanit", serif;
+}
+
+.gridContainer .heroButtonContent .heroButton2:hover {
+  border-color: #0056b3;
+  color: #0056b3;
+}
+
+.heroImage {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.heroButton1 {
+  padding: 17px 20px;
+  border-radius: 50px;
+  cursor: pointer;
+  border: 0;
+  background-color: white;
+  box-shadow: rgb(0 0 0 / 5%) 0 0 8px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  font-size: 15px;
+  transition: all 0.5s ease;
+}
+
+.heroButton1:hover {
+  letter-spacing: 3px;
+  background-color: hsl(261deg 80% 48%);
+  color: hsl(0, 0%, 100%);
+  box-shadow: rgb(93 24 220) 0px 7px 29px 0px;
+}
+
+.heroButton1:active {
+  letter-spacing: 3px;
+  background-color: hsl(261deg 80% 48%);
+  color: hsl(0, 0%, 100%);
+  box-shadow: rgb(93 24 220) 0px 0px 0px 0px;
+  transform: translateY(10px);
+  transition: 100ms;
+}
+
+.button {
+  padding: 0.8em 1.3em;
+  border: none;
+  border-radius: 100px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  cursor: pointer;
+  color: #2c9caf;
+  transition: all 1000ms;
+  font-size: 15px;
+  position: relative;
+  overflow: hidden;
+  outline: 2px solid #2c9caf;
+  background-color: black;
+  font-family: "Raleway", serif;
+}
+
+.button:hover {
+  color: #ffffff;
+  transform: scale(1.1);
+  outline: 2px solid #70bdca;
+  box-shadow: 4px 5px 17px -4px #268391;
+}
+
+.button::before {
+  content: "";
+  position: absolute;
+  left: -50px;
+  top: 0;
+  width: 0;
+  height: 100%;
+  background-color: #2c9caf;
+  transform: skewX(45deg);
+  z-index: -1;
+  transition: width 1000ms;
+}
+
+.button:hover::before {
+  width: 250%;
+}
+
+@media screen and (max-width: 768px) {
+  .heroSectionContent {
+    padding: 20px;
     flex-direction: column;
   }
 
-  .ctas a {
-    font-size: 14px;
-    height: 40px;
-    padding: 0 16px;
+  .gridContainer .heroSectionText {
+    padding: 15px;
+    text-align: center;
   }
 
-  a.secondary {
-    min-width: auto;
+  .gridContainer .heroHeadingContent {
+    font-size: 2.5rem;
   }
 
-  .footer {
-    flex-wrap: wrap;
+  .gridContainer .heroDescriptionContent {
+    font-size: 0.9rem;
+  }
+
+  .heroImage {
+    margin-top: 20px;
+  }
+
+  .heroButton1,
+  .button {
     align-items: center;
-    justify-content: center;
+    padding: 18px 15px;
+    font-size: 1rem;
   }
 }
 
-@media (prefers-color-scheme: dark) {
-  .logo {
-    filter: invert();
+@media screen and (max-width: 480px) {
+  .gridContainer .heroHeadingContent {
+    margin-top: 110px;
+    font-size: 2.6rem;
+  }
+
+  .gridContainer .heroDescriptionContent {
+    font-size: 0.9rem;
+  }
+
+  .heroButton1,
+  .button {
+    align-items: center;
+    padding: 18px 15px;
+    font-size: 1rem;
+  }
+
+  .heroBanner {
+    max-width: 90%;
   }
 }
