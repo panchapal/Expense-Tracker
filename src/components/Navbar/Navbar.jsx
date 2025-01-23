@@ -27,7 +27,7 @@ export default function Navbar() {
     { label: 'Transaction', path: '/dashboard/add-transaction' },
     { label: 'History', path: '/dashboard/transHistory' },
     { label: 'Budget', path: '/dashboard/budget-setting' },
-    // { label: 'Monthly', path: '/dashboard/monthly-summary' },
+    { label: 'Monthly', path: '/dashboard/monthly-summary' },
 
   ];
 

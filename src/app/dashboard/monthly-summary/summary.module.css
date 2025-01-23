@@ -1,0 +1,273 @@
+@import "@fontsource/kanit";
+@import "@fontsource/raleway";
+
+.monthlyContainer {
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
+  min-height: 100vh;
+  background: url("/images/b1.jpg") no-repeat center center;
+  background-size: cover;
+  margin-top: 50px;
+}
+
+.monthlyContainer .contentWrapper {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  width: 100%;
+  flex-wrap: wrap; 
+}
+
+.monthlyContainer .contentWrapper .leftSection {
+  position: relative;
+  padding: 25px;
+  width: 100%;
+  max-width: 450px;
+  min-height: 300px;
+  background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.843);
+  z-index: 1;
+  color: white;
+}
+
+.monthlyContainer .contentWrapper .leftSection::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.749);
+  border-radius: 10px;
+  z-index: -1;
+}
+
+.contentWrapper .leftSection .monthlyHeading {
+  font-family: "kanit", serif;
+  color: white;
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 2.1rem;
+}
+
+.contentWrapper .leftSection .summaryPaper {
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.leftSection .summaryPaper .incomeText {
+  font-family: "Raleway", serif;
+  font-size: 1.3rem;
+  color: #4caf50;
+  font-weight: bold;
+}
+
+.leftSection .summaryPaper .expensesText {
+  font-family: "Raleway", serif;
+  font-size: 1.3rem;
+  color: #f44336;
+  font-weight: bold;
+}
+
+.leftSection .summaryPaper .savingsText {
+  font-family: "Raleway", serif;
+  font-size: 1.3rem;
+  color: #2196f3;
+  font-weight: bold;
+}
+
+.exportButton {
+  background-image: linear-gradient(to right, #348F50 0%, #56B4D3 51%, #348F50 100%);
+  padding: 15px 45px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  border-radius: 10px;
+  font-family: "Raleway", serif;
+  font-size: 1rem;
+}
+
+.exportButton:hover {
+  background-position: right center;
+  color: #fff;
+  text-decoration: none;
+}
+
+.monthlyContainer .contentWrapper .rightSection {
+  padding: 25px;
+  flex-grow: 1;
+}
+
+.rightSection .monthlyCategoryHeading {
+  font-family: "Kanit", serif;
+  font-size: 2.1rem;
+  text-align: center;
+  color: white;
+  margin-bottom: 20px;
+}
+
+.rightSection .monthlyCategoryGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.rightSection .monthlyCategoryGrid .monthlyCategoryBox {
+  position: relative;
+  padding: 20px;
+  text-align: center;
+  background-image: linear-gradient(270.3deg, rgba(84,212,228,1) 0.2%, rgba(68,36,164,1) 100%);
+  overflow: hidden;
+  border-radius: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.843);
+  z-index: 1;
+  color: white;
+  transition: all 0.3s ease;
+}
+
+.rightSection .monthlyCategoryGrid .monthlyCategoryBox::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.749);
+  border-radius: 10px;
+  z-index: -1;
+}
+
+.rightSection .monthlyCategoryGrid .monthlyCategoryBox:hover {
+  transform: scale(1.03);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+}
+
+.monthlyCategoryBox .categoryName {
+  font-family: "Raleway", serif;
+  font-size: 1.3rem;
+  color: white;
+}
+
+.monthlyCategoryBox .categoryAmount {
+  font-family: "Raleway", serif;
+  font-size: 1.3rem;
+  color: rgb(212, 206, 206);
+  margin-top: 10px;
+}
+
+
+@media (max-width: 1024px) {
+  .monthlyContainer {
+    padding: 20px;
+  }
+
+  .contentWrapper .leftSection {
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .contentWrapper .rightSection {
+    margin-top: 20px;
+  }
+
+  .monthlyCategoryGrid {
+    grid-template-columns: 1fr; 
+    gap: 15px;
+  }
+
+  .contentWrapper .leftSection .monthlyHeading {
+    font-size: 1.8rem;
+  }
+
+  .contentWrapper .leftSection .summaryPaper {
+    padding: 15px;
+  }
+
+  .leftSection .summaryPaper .incomeText,
+  .leftSection .summaryPaper .expensesText,
+  .leftSection .summaryPaper .savingsText {
+    font-size: 1.2rem;
+  }
+
+  .leftSection .summaryPaper .exportButton {
+    padding: 12px 35px;
+    font-size: 0.9rem;
+  }
+
+  .rightSection .monthlyCategoryHeading {
+    font-size: 1.8rem;
+  }
+
+  .rightSection .monthlyCategoryGrid .monthlyCategoryBox {
+    padding: 15px;
+  }
+
+  .monthlyCategoryBox .categoryName {
+    font-size: 1.1rem;
+  }
+
+  .monthlyCategoryBox .categoryAmount {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .monthlyContainer {
+    padding: 15px;
+    margin-top: 50px;
+  }
+
+  .contentWrapper {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .monthlyContainer .contentWrapper .leftSection,
+  .monthlyContainer .contentWrapper .rightSection {
+    width: 100%;
+  }
+
+  .contentWrapper .leftSection .monthlyHeading {
+    font-size: 1.8rem;
+  }
+
+  .contentWrapper .leftSection .summaryPaper {
+    padding: 12px;
+  }
+
+  .leftSection .summaryPaper .incomeText,
+  .leftSection .summaryPaper .expensesText,
+  .leftSection .summaryPaper .savingsText {
+    font-size: 1.2rem;
+  }
+
+  .leftSection .summaryPaper .exportButton {
+    padding: 10px 30px;
+    font-size: 0.8rem;
+  }
+
+  .rightSection .monthlyCategoryHeading {
+    font-size: 1.8rem;
+  }
+
+  .rightSection .monthlyCategoryGrid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .rightSection .monthlyCategoryGrid .monthlyCategoryBox {
+    padding: 12px;
+  }
+
+  .monthlyCategoryBox .categoryName {
+    font-size: 1.2rem;
+  }
+
+  .monthlyCategoryBox .categoryAmount {
+    font-size: 1.1rem;
+  }
+}
