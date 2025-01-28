@@ -4,12 +4,15 @@ Welcome to the Expense Tracker Website! This application allows users to manage 
 
 ### Weblink: [Live Website](https://expense-tracker-psi-ebon.vercel.app/)
 ## Some Images:
-<img width="450px;" src="https://github.com/rishavchanda/rishav-chanda-portfolio/assets/64485885/4774dc30-1c1c-4c6c-b23b-019f3481713e"/>
-<img width="450px;" src="https://github.com/rishavchanda/rishav-chanda-portfolio/assets/64485885/0a33349f-262d-4720-afed-7afc0dfd85a5"/>
-<img width="450px;" src="https://github.com/rishavchanda/rishav-chanda-portfolio/assets/64485885/92f2622f-0a7f-444a-8f60-6edeae7508dd"/>
-<img width="450px;" src="https://github.com/rishavchanda/rishav-chanda-portfolio/assets/64485885/0e984e85-cbd9-487b-bf91-166009b39319"/>
-<img width="450px;" src="https://github.com/rishavchanda/rishav-chanda-portfolio/assets/64485885/6ad7b63b-4c51-4c98-bd21-847e5d48d559"/>
-<img width="450px;" src="https://github.com/rishavchanda/rishav-chanda-portfolio/assets/64485885/10647898-7154-434c-84e6-edee6679ca92"/>
+<img width="450px;" src="https://github.com/panchapal/Expense-Tracker/blob/main/public/images/1.png"/>
+<img width="450px;" src="https://github.com/panchapal/Expense-Tracker/blob/main/public/images/2.png"/>
+<img width="450px;" src="https://github.com/panchapal/Expense-Tracker/blob/main/public/images/3.png"/>
+<img width="450px;" src="https://github.com/panchapal/Expense-Tracker/blob/main/public/images/4.png"/>
+<img width="450px;" src="https://github.com/panchapal/Expense-Tracker/blob/main/public/images/5.png"/>
+<img width="450px;" src="https://github.com/panchapal/Expense-Tracker/blob/main/public/images/6.png"/>
+<img width="450px;" src="https://github.com/panchapal/Expense-Tracker/blob/main/public/images/7.png"/>
+<img width="450px;" src="https://github.com/panchapal/Expense-Tracker/blob/main/public/images/8.png"/>
+
 
 ## Table of Contents
 - [Introduction](#introduction)
