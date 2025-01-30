@@ -2,7 +2,7 @@
 
 Welcome to the Expense Tracker Website! This application allows users to manage and track their daily financial expenses efficiently.
 
-### Weblink: [Live Website](https://expense-tracker-psi-ebon.vercel.app/)
+### Weblink: [Live Website](https://expense-tracker-alpha-two.vercel.app/)
 ## Some Images:
 <img width="450px;" src="https://github.com/panchapal/Expense-Tracker/blob/main/public/images/1.png"/>
 <img width="450px;" src="https://github.com/panchapal/Expense-Tracker/blob/main/public/images/2.png"/>
